@@ -1,5 +1,5 @@
 import random
-c=["R","P","S" ]
+c=["Rock","Paper","Scissors" ]
 d1={}
 d2={}
 q=0
@@ -13,10 +13,10 @@ for i in range(1,11):
     print("Computer's choice=%s" %(u))
     d1[i]=p
     d2[i]=u
-    if(((p=='P') and (u=='R')) or ((p=='S') and (u=='P'))or ((p=='R') and (u=='S'))):
+    if(((p=='Paper') and (u=='Rock')) or ((p=='Scissors') and (u=='Paper'))or ((p=='Rock') and (u=='Scissors'))):
         l.append('P')
         q=q+1
-    elif(((u=='P') and (p=='R')) or ((u=='S') and (p=='P')) or ((u=='R') and (p=='S'))):
+    elif(((u=='Paper') and (p=='Rock')) or ((u=='Scissors') and (p=='Paper')) or ((u=='Rock') and (p=='Scissors'))):
         l.append('C')
         t=t+1
     else:
