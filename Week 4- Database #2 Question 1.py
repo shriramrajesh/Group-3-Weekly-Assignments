@@ -20,7 +20,6 @@ conn.execute("INSERT INTO EMPLOYEE (Name,ID,Salary,Department_id,City)"
                  "VALUES ('James',104,28000,4,'Hyderabdad')")
 conn.execute("INSERT INTO EMPLOYEE (Name,ID,Salary,Department_id,City)"
                  "VALUES ('Linda',105,42000,5,'Chennai')")
-conn.commit()
 print(conn.execute("SELECT * from EMPLOYEE").fetchall())
 print(conn.execute("SELECT Name,ID,Salary from EMPLOYEE").fetchall())
 n=input("Enter the first letter of employee name")
@@ -31,4 +30,5 @@ id=input("Enter id of employee to change employee name")
 nn=input("Enter new employee name")
 conn.execute("UPDATE EMPLOYEE SET Name= '"+ nn +"'where ID='"+ id +"'")
 print(conn.execute("SELECT * from EMPLOYEE").fetchall())
+conn.commit()
 conn.close()
