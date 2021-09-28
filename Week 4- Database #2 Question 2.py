@@ -36,7 +36,6 @@ conn.execute("INSERT INTO DEPARTMENT (Department_id,Department_name)"
                  "VALUES (4,'Operations')")
 conn.execute("INSERT INTO DEPARTMENT (Department_id,Department_name)"
                  "VALUES (5,'Customer Support')")
-conn.commit()
 print(conn.execute("SELECT * FROM DEPARTMENT").fetchall())
 a='y'
 while(a=='y'):
