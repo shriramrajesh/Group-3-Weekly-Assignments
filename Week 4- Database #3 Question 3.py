@@ -1,0 +1,11 @@
+import sqlite3
+conn = sqlite3.connect('database.sqlite')
+cursor = conn.cursor()
+print(conn.execute("select HomeTeam,FTHG,FTAG from Matches where HomeTeam= 'Aachen' and season=2010 Order by FTHG desc").fetchall())
+print(conn.execute("select HomeTeam,count(FTR) from Matches where FTR='H' and season=2016 group by HomeTeam order by count(FTR) desc").fetchall())
+print(conn.execute("select * from Unique_Teams limit 10 ").fetchall())                                                               
+print(conn.execute("select Match_ID,Teams_in_Matches.Unique_Team_ID,TeamName from Teams_in_Matches,Unique_Teams where Teams_in_Matches.Unique_Team_ID==Unique_Teams.Unique_Team_ID").fetchall())                            
+print(conn.execute("select Match_ID,Teams_in_Matches.Unique_Team_ID,Unique_Teams.TeamName from Teams_in_Matches left join Unique_Teams on Teams_in_Matches.Unique_Team_ID=Unique_Teams.Unique_Team_ID").fetchall())          
+print(conn.execute("select Match_ID,Teams_in_Matches.Unique_Team_ID,Unique_Teams.TeamName from Teams_in_Matches left join Unique_Teams on Teams_in_Matches.Unique_Team_ID=Unique_Teams.Unique_Team_ID limit 10").fetchall())
+print(conn.execute("select Unique_Team_ID,Unique_Teams.TeamName,AvgAgeHome,Season,ForeignPlayersHome from Unique_Teams,Teams limit 5").fetchall())
+print(conn.execute("select TeamName,Unique_Teams.Unique_Team_ID,max(Match_ID) from Teams_in_Matches,Unique_Teams where TeamName like '%y' or TeamName like '%r' group by TeamName,Unique_Teams.Unique_Team_ID ").fetchall())
