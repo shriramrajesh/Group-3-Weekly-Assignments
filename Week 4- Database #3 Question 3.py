@@ -6,6 +6,6 @@ print(conn.execute("select HomeTeam,count(FTR) from Matches where FTR='H' and se
 print(conn.execute("select * from Unique_Teams limit 10 ").fetchall())                                                               
 print(conn.execute("select Match_ID,Teams_in_Matches.Unique_Team_ID,TeamName from Teams_in_Matches,Unique_Teams where Teams_in_Matches.Unique_Team_ID==Unique_Teams.Unique_Team_ID").fetchall())                            
 print(conn.execute("select Match_ID,Teams_in_Matches.Unique_Team_ID,Unique_Teams.TeamName from Teams_in_Matches left join Unique_Teams on Teams_in_Matches.Unique_Team_ID=Unique_Teams.Unique_Team_ID").fetchall())          
-print(conn.execute("select Match_ID,Teams_in_Matches.Unique_Team_ID,Unique_Teams.TeamName from Teams_in_Matches left join Unique_Teams on Teams_in_Matches.Unique_Team_ID=Unique_Teams.Unique_Team_ID limit 10").fetchall())
+print(conn.execute("SELECT * FROM Unique_Teams JOIN Teams LIMIT 10").fetchall())
 print(conn.execute("select Unique_Team_ID,Unique_Teams.TeamName,AvgAgeHome,Season,ForeignPlayersHome from Unique_Teams,Teams limit 5").fetchall())
-print(conn.execute("select TeamName,Unique_Teams.Unique_Team_ID,max(Match_ID) from Teams_in_Matches,Unique_Teams where TeamName like '%y' or TeamName like '%r' group by TeamName,Unique_Teams.Unique_Team_ID ").fetchall())
+print(conn.execute("SELECT MAX(Match_id), Teams_in_Matches.Unique_Team_ID, Unique_Teams.TeamName FROM Teams_in_Matches JOIN Unique_Teams ON Teams_in_Matches.Unique_Team_ID = Unique_Teams.Unique_Team_ID WHERE TeamName LIKE '%y' OR TeamName LIKE '%r' GROUP BY Teams_in_Matches.Unique_Team_ID, TeamName").fetchall())
