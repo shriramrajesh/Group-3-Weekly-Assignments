@@ -26,7 +26,7 @@ class Cat(Pet):
         if (len(self.name)!=0):
             return ("Species of: Cat, named %s, hates %s" %(self.name,self.hates))
         else:
-            return ("Species of: Dog, unnamed,chases %s" % (self.hates))
+            return ("Species of: Cat, unnamed, hates %s" % (self.hates))
 
 d1= Dog("dog","Sammy","Felix")
 d2= Dog("dog","Frankie","Mr. Kat")
