@@ -1,4 +1,5 @@
 /*CONTAINER*/
+
 * {
     box-sizing: border-box;
   }
@@ -38,6 +39,7 @@ h3{
     padding-top: 6px;
   
   }
+
   .flex-item-one-left {
     background-color: black;
     padding: 10px;
@@ -73,12 +75,14 @@ span{
   
   float: right;
 }  
+
 .flex-item-main-right button{
   background-color: #0073e6;
   border: none;
   color: white;
   
 }
+
 /*search*/
 .has-search .form-control {
   padding-left: 2.375rem;
@@ -87,6 +91,7 @@ span{
   width:95%;
   border-radius: 3px;
 }
+
 .has-search .form-control-feedback {
   position: absolute;
   z-index: 2;
@@ -114,6 +119,7 @@ span{
   color:white;
   padding-right: 10px;
 }
+
 /*main menu*/
 .mobile-container {
   max-width: 480px;
@@ -122,14 +128,17 @@ span{
   color: white;
   border-radius: 10px;
 }
+
 .topnav {
   overflow: hidden;
   background-color: #141f1f;
   position: relative;
 }
+
 .topnav #myLinks {
   display: none;
 }
+
 .topnav a {
   color: white;
   padding: 14px 16px;
@@ -137,6 +146,7 @@ span{
   font-size: 17px;
   display: block;
 }
+
 .topnav a.icon {
   background: black;
   display: block;
@@ -144,15 +154,18 @@ span{
   right: 0;
   top: 0;
 }
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
+
 .active {
   background-color: #004d99;
   color: white;
   text-align: center;
 }
+
 /*Flex- Container Right Two */
 .flex-container {
   display: flex;
@@ -160,6 +173,7 @@ span{
   background-color: #ebebe0;
   
 }
+
 .flex-container > div {
   background-color: white;
   width: 267px;
@@ -168,6 +182,9 @@ span{
   line-height: 75px;
   font-size: 30px;
 }
+
+
+
 /*First Sub Container */
 .main{
   display:flex;
@@ -223,6 +240,7 @@ span{
     padding-left: 10px;
     padding-top: 6PX;
   }
+
 /* Recap container */
 .recap-main{
   display:flex;
@@ -279,6 +297,7 @@ span{
   }
   .recap-main-sub2-sub2-b{
     height: 173px;
+
   }
   .recap-main-sub-2-sub-1{
       width: 765px;
@@ -315,6 +334,7 @@ span{
       width: 354px;
       text-align: left;
       padding-left: 10px;
+
   }
   .recap-main-sub-2b-abcd{
     width:100%;
@@ -324,7 +344,9 @@ span{
     width: 100%;
     text-align: left;
     padding-left: 10px;
+
 }
+
   .recap-main-sub-3-abcd{
       background-color: white;
       width: 500px;
@@ -334,6 +356,7 @@ span{
       font-weight: normal;
       font-size:12px;
       line-height: 16px;
+
   }
 .img-graph{
   width: 765px;
@@ -346,18 +369,21 @@ span{
   border: none;
   background-color: white;
   color: gray;
+
 }
 .button-close-2{
   border: none;
   background-color: white;
   color: gray;
   padding-left: 630px;
+
 }
 .button-min-2{
   border: none;
   background-color: white;
   color: gray;
  
+
 }
 .button-right{
   padding-left: 862px;
@@ -366,6 +392,8 @@ span{
  text-align: left;
  color:#334d4d;
 }
+
+
 /* Report main container */
 .report-main{
   background-color: #ebebe0;
@@ -393,6 +421,7 @@ span{
   height: 30px;
   color: black;
   text-align: right;
+
 }
 .report-main-sub-1-b{
   display: flex;
@@ -408,6 +437,7 @@ span{
   height: 200px;
   width: 100px;
   background-color:  #00994d;
+
 }
 .report-main-sub-2-b2-abcd{
   height: 70px;
@@ -439,6 +469,7 @@ padding-top: 20px;
   width: 60px;
   text-align: center;
 padding-top: 20px;
+
 }
 .report-main-sub-2a-c{
   background-color: #cc0000;
@@ -458,11 +489,13 @@ padding-top: 20px;
   background-color: orange;
   height: 58px;
   width: 253PX;
+
 }
 .report-main-sub-2b-b{
   background-color: #00994d;
   height: 58px;
   width: 253PX;
+
 }
 .report-main-sub-2b-c{
   background-color: red;
@@ -488,12 +521,14 @@ padding-top: 20px;
   font-weight: bold;
   font-size: 12px;
   
+
 }
 .report-bar-style{
   font-weight: normal;
   font-size: 11px;
   line-height: 16px;
  
+
 }
 .button-nav{
   size: 10px;
@@ -505,6 +540,7 @@ width:330px;
 overflow: hidden;
 height: 6px;
 background-color: #ccc;
+
 }
 .progress-bar {
 width: 0;
@@ -512,6 +548,16 @@ height: 90%;
 color: #fff;
 text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
   /* Responsive layout - makes a one column-layout instead of two-column layout */
   @media (max-width: 800px) {
     .flex-container-main{
@@ -529,6 +575,7 @@ text-align: center;
     
     .flex-item-one-right{
       width: 100%;
+
     }
     .report-main{
       flex-direction: column;
