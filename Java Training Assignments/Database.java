@@ -38,6 +38,8 @@ public class Database {
 			PreparedStatement statement3 = con.prepareStatement("delete from employee where City=?");
 			statement3.setString(1, City);
 			rows = statement3.executeUpdate();
+			if (rows > 0)
+				System.out.println("Deleted");
 			con.close();
 		} catch (SQLException ex) {
 			ex.printStackTrace();
