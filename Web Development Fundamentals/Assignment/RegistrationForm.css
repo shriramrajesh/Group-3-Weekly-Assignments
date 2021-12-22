@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: gold;
+}
+#h21{
+display: none;
+text-align:center;
+margin-top: 300px;
+margin-left: 50px;
+text-transform: uppercase;
+font-weight: bolder;
+color: gold;
+border: 7px solid gold;
+padding:25px;
+}
+form{
+    text-align:justify;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: gold;
+    line-height: 200%;
+    width: 500px;
+    border: 15px solid gold;
+    padding: 50px;
+    margin: 20px;
+    margin-left: 450px;
+    margin-top: 60px;
+}
+#name{
+    margin-left:67px;
+}
+#email{
+    margin-left:63px;
+}
+#p1{
+    margin-left:29px;
+}
+#p2{
+    margin-left:10px;
+}
+#age{
+    margin-left:85px;
+    width:175px;
+}
+#skills{
+    margin-left:66px;
+}
+#country{
+    margin-left:42px;
+    width:173px;
+}
+#state{
+    margin-left:73px;
+}
+#gender{
+    margin-left:55px;
+    width:173px;
+}
+#submit{
+    text-align: left;
+    margin-left: 185px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: gold;
+    background-color: black;
+    border: 2px solid gold;  
+}
+#error_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: gold;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
