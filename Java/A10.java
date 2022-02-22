@@ -1,14 +1,15 @@
 import java.io.*;
 import java.util.Scanner;
-public class Assignment {
+public class A10 {
 	public static void main(String[] args) 
 	  throws IOException
 	  {
 	   Scanner sc = new Scanner( System.in );
-	   double i;
-	   System.out.println("Input");
-	   i=sc.nextDouble();
+	   int i;
+	   System.out.println("Input:");
+	   i=sc.nextInt();
 	   System.out.println("Output");
-	   System.out.println("DOUBLE"+i);
-	}
-}
+	   for(int j=1;j<11;j++)
+		   System.out.println(i+"*"+j+"="+i*j);  
+		}
+	  }

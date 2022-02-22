@@ -1,5 +1,5 @@
 import java.io.*;
-public class Assignment {
+public class One {
 	public static void main(String[] args) 
 	  throws IOException
 	  {

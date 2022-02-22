@@ -1,6 +1,5 @@
 import java.sql.*;
-
-public class Database {
+public class DatabaseCRUDOperations {
 	public static void main(String[] args) {
 		String Name = "David";
 		int ID = 101;
